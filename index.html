@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <div id="clickstatus"></div>
+    <!--  <div id="clickstatus"></div>
     <div id="movestatus"></div>
     <div id="wrap">
 
@@ -16,26 +16,47 @@
         <div id="drop" class="droppable" ondragover="DragOver(event)" ondrop="Drop(event)">
             リストをドロップしてください。
         </div>
-    </div>
-    <ol id="dropSampleA" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'red' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
-        ondragleave="sampleChangeBackgroundColor( this, 'red' );">
-        <li id="dragSampleA" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
-            リスト項目Ａ
-        </li>
-        <li id="dragSampleB" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
-            リスト項目Ｂ
-        </li>
-        <li id="dragSampleC" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
-            リスト項目Ｃ
-        </li>
-    </ol>
-    <ol id="dropSampleB" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'blue' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
-        ondragleave="sampleChangeBackgroundColor( this, 'blue' );">
-        <li id="dragSampled" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
-            リスト項目D
-        </li>
-    </ol>
-    <div style="clear: both;"></div>
+    </div>-->
 
+    <div style="clear: both;"></div>
+    <div class="menu">
+        <label for="Panel1">本部</label>
+        <input type="checkbox" id="Panel1" class="on-off" />
+        <ul>
+            <ol id="dropSampleA" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'red' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
+                ondragleave="sampleChangeBackgroundColor( this, 'red' );">
+                <li id="dragSampleA" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+                    ホンダ
+                </li>
+                <li id="dragSampleB" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+                    佐々木
+                </li>
+                <li id="dragSampleC" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+                    井上
+                </li>
+            </ol>
+        </ul>
+        <label for="Panel12">部署</label>
+        <input type="checkbox" id="Panel12" class="on-off" />
+        <ul>
+            <ol id="dropSampleB" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'blue' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
+                ondragleave="sampleChangeBackgroundColor( this, 'blue' );">
+                <li id="dragSampleD" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+                    佐藤
+                </li>
+            </ol>
+        </ul>
+        <label for="Panel13">課</label>
+        <input type="checkbox" id="Panel13" class="on-off" />
+        <ul>
+            <ol id="dropSampleC" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'green' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
+                ondragleave="sampleChangeBackgroundColor( this, 'green' );">
+                <li id="dragSampleE" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+                    田中
+                </li>
+            </ol>
+
+        </ul>
+    </div>
 
 </body>
