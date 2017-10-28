@@ -1,0 +1,75 @@
+#wrap {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #3399ff;
+    cursor: pointer
+}
+
+#clickstatus {
+    top:10px;
+}
+#movestatus {
+    top:50px;
+}
+#box1 {
+    top:100px;
+}
+
+div.draggable {
+    width:100px;height:50px;background-color:red; padding: 10px; margin:10px; color: white;
+}
+div.droppablea {
+    width:250px; height:100px; padding:10px; color: rgb(15, 248, 15);
+}
+div.droppable {
+    width:250px; height:130px; background-color:rgb(7, 247, 115); padding:10px; color: white;
+}
+#dropSampleA,
+#dropSampleB {
+    float: left;
+    width: 280px;
+    min-height: 181px;
+    padding: 10px;
+    border: 1px solid gray;
+    list-style-position: inside;
+}
+#dropSampleA {
+    background-color: red;
+}
+#dropSampleB {
+    background-color: blue;
+}
+#dragSampleA,
+#dragSampleB,
+#dragSampleC,
+#dragSampleD {
+    width: 258px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: left;
+}
+#dragSampleA {
+    background-color: pink;
+}
+#dragSampleB {
+    background-color: lightblue;
+}
+#dragSampleC {
+    background-color: lightgreen;
+}
+#dragSampleD {
+    background-color: rgb(241, 88, 88);
+}
+
+#sample {
+    padding: 1em;
+}
+#sample label {
+    color: #444444;
+}
