@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/animate.js"></script>
+</head>
+
+<body>
+    <div id="clickstatus"></div>
+    <div id="movestatus"></div>
+    <div id="wrap">
+
+        <div class="box" id="drop" ondragover="DragOver(event)" ondrop="Drop(event)">
+            ドラックして動かせます。
+        </div>
+        <div id="drop" class="droppable" ondragover="DragOver(event)" ondrop="Drop(event)">
+            リストをドロップしてください。
+        </div>
+    </div>
+    <ol id="dropSampleA" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'red' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
+        ondragleave="sampleChangeBackgroundColor( this, 'red' );">
+        <li id="dragSampleA" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+            リスト項目Ａ
+        </li>
+        <li id="dragSampleB" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+            リスト項目Ｂ
+        </li>
+        <li id="dragSampleC" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+            リスト項目Ｃ
+        </li>
+    </ol>
+    <ol id="dropSampleB" ondrop="sampleDrop( event, this ); sampleChangeBackgroundColor( this, 'blue' );" ondragover="sampleAllowDrop( event ); sampleChangeBackgroundColor( this, 'yellow' );"
+        ondragleave="sampleChangeBackgroundColor( this, 'blue' );">
+        <li id="dragSampled" draggable="true" ondragstart="sampleDrag( event );" title="Profyの情報ポップアップ">
+            リスト項目D
+        </li>
+    </ol>
+    <div style="clear: both;"></div>
+
+
+</body>
