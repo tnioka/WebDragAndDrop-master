@@ -30,7 +30,8 @@ div.droppable {
     width:250px; height:130px; background-color:rgb(7, 247, 115); padding:10px; color: white;
 }
 #dropSampleA,
-#dropSampleB {
+#dropSampleB,
+#dropSampleC {
     float: left;
     width: 280px;
     min-height: 181px;
@@ -43,6 +44,9 @@ div.droppable {
 }
 #dropSampleB {
     background-color: blue;
+}
+#dropSampleC {
+    background-color: green;
 }
 #dragSampleA,
 #dragSampleB,
@@ -66,10 +70,48 @@ div.droppable {
 #dragSampleD {
     background-color: rgb(241, 88, 88);
 }
+#dragSampleE {
+    background-color: rgb(49, 223, 223);
+}
 
 #sample {
     padding: 1em;
 }
 #sample label {
     color: #444444;
+}label {
+    background: rgb(250, 184, 4);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+
+.menu ul {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding: 5px;
+}
+
+input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+    height: 200px;
 }
