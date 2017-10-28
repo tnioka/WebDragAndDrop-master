@@ -29,11 +29,26 @@ div.droppablea {
 div.droppable {
     width:250px; height:130px; background-color:rgb(7, 247, 115); padding:10px; color: white;
 }
-#dropSampleA,
-#dropSampleB,
-#dropSampleC {
+#dropSampleA{
     float: left;
-    width: 280px;
+    width: 1200px;
+    min-height: 181px;
+    padding: 10px;
+    border: 1px solid gray;
+    list-style-position: inside;
+}
+#dropSampleB{
+    float: left;
+    width: 1200px;
+    min-height: 181px;
+    padding: 10px;
+    border: 1px solid gray;
+    list-style-position: inside;
+}
+#dropSampleC,
+#dropSampleD {
+    float: left;
+    width: 600px;
     min-height: 181px;
     padding: 10px;
     border: 1px solid gray;
@@ -48,10 +63,15 @@ div.droppable {
 #dropSampleC {
     background-color: green;
 }
+#dropSampleD {
+    background-color: rgb(22, 220, 235);
+}
+
 #dragSampleA,
 #dragSampleB,
 #dragSampleC,
-#dragSampleD {
+#dragSampleD,
+#dragSampleE {
     width: 258px;
     margin: 10px 0;
     padding: 10px;
@@ -71,7 +91,7 @@ div.droppable {
     background-color: rgb(241, 88, 88);
 }
 #dragSampleE {
-    background-color: rgb(49, 223, 223);
+    background-color: rgb(250, 205, 3);
 }
 
 #sample {
